@@ -1,0 +1,21 @@
+<table>
+
+    <thead>
+        <tr>
+            <th scope="col">User Name</th>
+            <th scope="col">User Mail</th>
+            <th scope="col">User Verified</th>
+            <th scope="col">User Created On</th>
+            <th scope="col">User Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of data">
+            <td data-label="name">{{data.name}}</td>
+            <td data-label="Mail">{{data.mail}}</td>
+            <td data-label="Verified">{{data.isVerified}}</td>
+            <td data-label="Created">{{data.createdOn}}</td>
+            <td data-label="Type">{{data.type}}</td>
+        </tr>
+    </tbody>
+</table>
